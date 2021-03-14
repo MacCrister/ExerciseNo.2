@@ -1,0 +1,27 @@
+﻿@page
+@model ExerciseNo._2.Pages.Forms.RegistrationModel
+@{
+    ViewData["Title"] = "Registration";
+}
+<form method="post">
+
+    <h1> Sign Up </h1>
+    <div asp-validation-summary="All" style="color:red"> </div>
+
+    <input asp-for="Person.Name" placeholder="Name" />
+    <br> <br>
+    <input asp-for="Person.Address" placeholder="Address" />
+    <br> <br>
+    <input asp-for="Person.MobileNo" placeholder="Mobile Number" />
+    <br> <br>
+    <input asp-for="Person.Password" placeholder="New Password" />
+    <br> <br>
+    <input asp-for="Person.Gender" placeholder="Gender" />
+    <br> <br>
+    <input asp-for="Person.Age" placeholder="Age" />
+    <br> <br>
+    <input asp-for="Person.EmailAddress" placeholder="Email Address" />
+    <br> <br>
+    <button type="submit"> Submit </button>
+</form>
+
